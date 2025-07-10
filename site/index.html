@@ -4,11 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="James-Konieczny">
-    <title>Bowling Basics</title>
+    <meta name="description" content="A personal website featuring a haiku, quote, and more.">
+    <title>James' Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--adjust to different screen sizes-->
     <link rel="stylesheet" href="styles/main.css"><!--probably going to add this soon anyway-->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" type="x-icon"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <p>James-Konieczny</p>
+    <div class="width-wrap">
+        <header id="top">
+            <nav><ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+            </ul></nav>
+        </header>
+        <main>
+            <section id="bio">
+                <a href="images/myself.jpeg">
+                <img src="images/thumbnail-150.jpeg" alt="James Konieczny in front of a waterfall"
+                sizes="(max-width:500px) 150px, 300px"
+                srcset="images/thumbnail-150.jpeg 150w, images/thumbnail-300.jpeg 300w">
+                </a>
+            </section>
+            <section id="bowling-basics">
+                <h1>Bowling Basics</h1>
+                <p>Bowling is a sport in which you roll a heavy ball down a narrow lane towards a group of pins to knock down as many as you can. You can play competitively against others where whoever knocks down the most pins wins. Bowling can also be played in teams, or solo. Here we will be looking at ten pin bowling. Once you've arrived at the bowling alley, the first expectation is for you to remove your shoes. You will need bowling shoes but there will be some for rent at the desk if you do not have your own. The house (the bowling alley) will also provide bowling balls. House balls usually weigh anywhere from 6 lbs-16 lbs. Don't pick a ball that feels uncomfortably heavy, but it should be heavy enough that you can let it swing by its own weight. Select a ball that you can slide your fingers in and out of easily. Make sure you are not stretching your hand in order to hold the ball, your hand span should be comfortable enough to put a pencil between your hand and the ball.</p> <!-- Found me! -->
+                <p>In one game of bowling, there are ten frames. The pins reset at the end of every frame. In the first nine frames you will have two shots to roll your bowling ball down the lane and try to knock down all ten pins. The tenth frame has three shots, but you can only throw the third ball if you knock down all ten pins in the first two frames. The approach at the start of the lane is used the walk up to the foul line and throw your ball. Do not cross the foul line, for you will find oil on the other side and might fall or injure your self. Also, as the name suggests, crossing the foul line is considered a foul. The arrows are in line with the pins and because of this, most people will look at the arrows instead of the pins when lining up their shot. You can also use the lines from the wooden boards to help you position your shot. The ten pins at the end of the lane are numbered. There are four pin rows, the first row has the front pin or pin number one. From there, the numbers go in ascending order starting from the left to right.</p>
+            </section>
+            <section id="my-favourite-things">
+                <h2>My Favourite Things</h2>
+                <figure> <figcaption>Bowling Championship</figcaption>
+                <a href="https://www.freepik.com/free-vector/vintage-bowling-club-template_9585960.htm#fromView=search&page=1&position=26&uuid=c26f82de-0195-466e-8498-1a0e802b0786&query=Bowling+Ball+Png">
+                    <img src="images/logo.jpg"
+                    alt="Strike King Bowling Championship logo">
+                </a>
+                </figure>
+            </section>
+            <section id="video-games">
+                <h3>Video Games</h3>
+                <ol>
+                    <li>Ledgends Of Zelda</li>
+                    <li>Minecraft</li>
+                    <li>Halo: The Master Chief Collection</li>
+                </ol>
+            </section>
+            <section id="haiku">
+                <h3>Haiku - “Lighting One Candle”</h3>
+                <p>The light of a candle <br>Is transferred to another candle— <br>Spring twilight</br>
+                <cite>by <span class="author">Yosa Buson</span></cite></p>
+            </section>
+            <section id="embedding-external-content">
+                <h3>Public Domain Audiobook</h3>
+                <audio src="https://librivox.org/aesops-fables-new-translation-by-aesop/" controls>
+                    <a href="https://librivox.org/aesops-fables-new-translation-by-aesop/">Download the audiobook</a>
+                </audio>
+                <h3>YouTube Video</h3>
+ <iframe width="560"
+                            height="315"
+                            src="https://youtu.be/ClQ-ymoXJZc?si=ccd8CPfnWTzxDIJP"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    >
+                    <p>Your browser doesn't support this video</p>
+                    </iframe>
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <blockquote>
+                “It’s an imperfect world, but it’s the only one we’ve got.”
+                <cite> &mdash; <span class="author">Tony Stark, <em>Iron Man</em></span></cite>
+            </blockquote>
+            <p>&copy; 2025 
+                <a href="mailto:22037813@saultcollege.ca?subject=Message%20from%20CSD112%20Website">
+                    James Konieczny
+                </a>
+            </p>
+            <section id="sc-logo">
+                <picture>
+                    <source srcset="images/sc-logo/sc-logo.svg" width="70" >
+                    <img src="images/sc-logo/sc-logo/sc-logo.png" alt="Sault College Logo"
+                    srcset="images/sc-logo/sc-logo/sc-logo.png, images/sc-logo/sc-logo/sc-logo_105.png 1.5x, images/sc-logo/sc-logo/sc-logo_140.png 2x">>
+                </picture>
+            </section>
+        </footer>
+        <a href="#top" title="Back to top">◤</a>
+    </div>
 </body>
 </html>
