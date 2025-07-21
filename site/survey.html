@@ -55,20 +55,16 @@
                             <input type="date" id="date" name="best_day" />
                         </p>
                         <p>
-                            <label for="bear">
-                                <span>Which bear is best? </span>
-                                <strong><span aria-label="required">*</span></strong>
-                            </label>
-                            <input list="bear" name="best_bear" required />
-                            <datalist id="bear">
-                                <option value="" selected>&nbsp;</option>
-                                <option>Black</option>
-                                <option>Brown</option>
-                                <option>Care</option>
-                                <option>Panda</option>
-                                <option>Polar</option>
-                                <option>Teddy</option>
-                            </datalist>
+<label for="best_bear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
+          <select id="best_bear" name="best_bear" required aria-required="true">
+            <option selected value="">&nbsp;</option>
+            <option value="Black">Black</option>
+            <option value="Brown">Brown</option>
+            <option value="Care">Care</option>
+            <option value="Panda">Panda</option>
+            <option value="Polar">Polar</option>
+            <option value="Teddy">Teddy</option>
+          </select>
                         </p>
                     <fieldset>
                         <legend>Do you like radio buttons?</legend>
