@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="James-Konieczny">
+    <meta name="description" content="A personal website featuring a haiku, quote, and more.">
+    <title>James' Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--adjust to different screen sizes-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" type="x-icon"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="width-wrap">
+        <header id="top">
+            <nav><ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+            </ul></nav>
+        </header>
+        <main>
+            <div id="creating-a-web-form">
+                <h1>Survey</h1>
+                <form action="https://formspree.io/f/xvgrrwyd" method="post">
+                    <section>
+                        <p>
+<label for="name_field">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
+                            <input type="text" id="name" name="name_field" required />
+                        </p>
+                        <p>
+                            <label for="email">
+                                <span>What is your email? </span>
+                                <strong><span aria-label="required">*</span></strong>
+                            </label>
+                            <input type="text" id="email" name="email_field" required />
+                        </p>
+                        <p>
+                            <label for="whole_number">
+                                <span>Which whole number is best? </span>
+                            </label>
+                            <input type="number" min="0" step="1" id="whole_number" name="best_whole_number" />
+                        </p>
+                        <p>
+                            <label for="date">
+                                <span>Which day is best? </span>
+                            </label>
+                            <input type="date" id="date" name="best_day" />
+                        </p>
+                        <p>
+<label for="best_bear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
+          <select id="best_bear" name="best_bear" required aria-required="true">
+            <option selected value="">&nbsp;</option>
+            <option value="Black">Black</option>
+            <option value="Brown">Brown</option>
+            <option value="Care">Care</option>
+            <option value="Panda">Panda</option>
+            <option value="Polar">Polar</option>
+            <option value="Teddy">Teddy</option>
+          </select>
+                        </p>
+                    <fieldset>
+                        <legend>Do you like radio buttons?</legend>
+                        <ul>
+                            <li>
+                                <label for="yes"><input type="radio" id="yes" name="enjoys_radio_buttons" value="yes">Yes</label>
+                            </li>
+                            <li>
+                                <label for="no"><input type="radio" id="no" name="enjoys_radio_buttons" value="no">No</label>
+                            </li>
+                            <li>
+                                <label for="none"><input type="radio" id="none" name="enjoys_radio_buttons" value="?" checked>None of your business</label>
+                            </li>
+                        </ul>
+                    </section>
+                    </fieldset>
+                        <p>
+                            <label for="life?">
+                                <span>What is the meaning of life? </span>
+                            </label>
+                            <textarea id="life?" name="life_meaning" rows="5" cols="50" placeholder="Enter the correct answer here"></textarea>
+                        </p>
+                    <section>
+                        <p>
+                            <button type="submit">Send</button>
+                        </p>
+                    </section>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <blockquote>
+                “It’s an imperfect world, but it’s the only one we’ve got.”
+                <cite> &mdash; <span class="author">Tony Stark, <em>Iron Man</em></span></cite>
+            </blockquote>
+            <p>&copy; 2025 
+                <a href="mailto:22037813@saultcollege.ca?subject=Message%20from%20CSD112%20Website">
+                    James Konieczny
+                </a>
+            </p>
+            <section id="sc-logo">
+                <picture>
+                    <source srcset="images/sc-logo/sc-logo.svg" >
+                    <img src="images/sc-logo/sc-logo/sc-logo.png" width="70" alt="Sault College Logo"
+                    srcset="images/sc-logo/sc-logo/sc-logo.png, images/sc-logo/sc-logo/sc-logo_105.png 1.5x, images/sc-logo/sc-logo/sc-logo_140.png 2x">>
+                </picture>
+            </section>
+        </footer>
+        <a href="#top" title="Back to top">◤</a>
+    </div>
+</body>
+</html>
