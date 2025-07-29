@@ -1,6 +1,141 @@
+/* Start of Lab-5 styles */
+/* Colour palette is from:  https://color.adobe.com/explore */
+
+/* Colour Theme Swatches in Hex
+primary colour: #9BF2EA;
+primary-dark colour: #275950;
+secondary colour: #260101;
+secondary-light colour: #B79B9B; */
+
+/* Colour Theme Swatches in RGBA
+primary colour: rgba(155, 242, 233, 1);
+primary-dark colour: rgba(39, 89, 80, 1);
+secondary colour: rgba(38, 0, 0, 1);
+secondary-light colour: rgba(183, 155, 155, 1); */
+
+*, /* Selector applies to all elements */
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.width-wrap {
+    max-width: 960px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em; /* padding: 0em 2em 2em 2em; */
+
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3); /* border: 1px solid rgba(0, 0, 0, 0.3); border-top: none; */
+
+    margin-bottom: 3em;
+
+    background-color: rgba(39, 89, 80, 0.9);
+}
+body {
+    background-color: rgba(183, 155, 155, 1);
+    color: rgba(155, 242, 233, 1);
+}
+h1, h2, h3 {
+    color: rgba(38, 0, 0, 1);
+}
+a {
+    color: rgba(38, 0, 0, 1);
+}
+::selection {
+    background-color: rgba(155, 242, 233, 1);
+}
+footer {
+  width: 50vw;
+  min-width: 300px;
+  max-width: 890px; /* width: clamp(300px, 50vw, 890px); */
+  
+  margin-top: 3em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto; /* margin: 3em 0 2em 0; */
+
+  border-bottom: 3px dotted rgba(183, 155, 155, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+dt::after {
+  content: ":";
+}
+
+/* Nav bar styles - section 4 of Lab-5 */
+header {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    margin-left: -2em;
+    margin-right: -2em;
+}
+header nav {
+   border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+   padding-left: 2em;
+   padding-right: 2em;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav a {
+    display: inline-block;
+    text-decoration: none;
+    border-top: 4px solid transparent;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em; /* padding: 1em 1em 0.5em 1em; */
+    color: rgba(183, 155, 155, 1);
+}
+header nav a:hover {
+    border-top-color: rgba(38, 0, 0, 1);
+}
+
+/* Table styles - section 5 of Lab-5 */
 table {
     border-collapse: collapse;
+}  
+td, th {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em; /* padding: 0.3em 1em */
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
-th,td { 
-    border: 1px solid rgba(0,0,0,0.2); 
+thead, tfoot, tbody th {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+tbody td {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+tbody tr:nth-child(even) td {
+    background-color: rgba(0, 0, 0, 0.15);
+} 
+
+/* Form styles - section 6 of Lab-5 */
+label {
+    display: block;
+}
+input[type=radio] + label, input[type=checkbox] + label {
+    display: inline-block;
+}
+input[type="submit"] {
+    border: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 3em; /* padding: 1em 3em; */
+    background-color: rgba(38, 0, 0, 1)
+}
+input:invalid, textarea:invalid, select:invalid {
+    background-color: rgba(183, 155, 155, 1);
 }
