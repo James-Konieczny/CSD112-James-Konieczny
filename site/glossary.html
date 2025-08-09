@@ -7,7 +7,8 @@
     <meta name="description" content="A personal website featuring a haiku, quote, and more.">
     <title>James' Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--adjust to different screen sizes-->
-    <link rel="stylesheet" href="styles/main.css"><!--probably going to add this soon anyway-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -18,14 +19,20 @@
 <body>
     <div class="width-wrap">
         <header id="top">
-            <nav><ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="links.html">Links</a></li>
-                <li><a href="glossary.html">Glossary</a></li>
-            </ul></nav>
+            <nav id="main-nav"></nav>
+            <script src="scripts/navigation.js"></script>
         </header>
         <main id="creating-a-glossary">
+            <dl>
+                <dt>Cohesion</dt>
+                <dd>Cohesion is the degree to which the parts of one component are related to each other.</dd>
 
+                <dt>Coupling</dt>
+                <dd>Coupling is the degree to which different components depend on each other.</dd>
+
+                <dt>Polymorphism</dt>
+                <dd>Polymorphism is the enabling of uniform interaction among different types.</dd>
+            </dl>
         </main>
         <footer>
             <hr>

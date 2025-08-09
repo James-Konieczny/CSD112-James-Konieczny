@@ -7,7 +7,8 @@
     <meta name="description" content="A personal website featuring a haiku, quote, and more.">
     <title>James' Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--adjust to different screen sizes-->
-    <link rel="stylesheet" href="styles/main.css"><!--probably going to add this soon anyway-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" type="x-icon"/>
@@ -18,11 +19,8 @@
 <body>
     <div class="width-wrap">
         <header id="top">
-            <nav><ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="links.html">Links</a></li>
-                <li><a href="glossary.html">Glossary</a></li>
-            </ul></nav>
+            <nav id="main-nav"></nav>
+            <script src="scripts/navigation.js"></script>
         </header>
         <main>
             <section id="bio">
@@ -37,92 +35,8 @@
                 <p>Bowling is a sport in which you roll a heavy ball down a narrow lane towards a group of pins to knock down as many as you can. You can play competitively against others where whoever knocks down the most pins wins. Bowling can also be played in teams, or solo. Here we will be looking at ten pin bowling. Once you've arrived at the bowling alley, the first expectation is for you to remove your shoes. You will need bowling shoes but there will be some for rent at the desk if you do not have your own. The house (the bowling alley) will also provide bowling balls. House balls usually weigh anywhere from 6 lbs-16 lbs. Don't pick a ball that feels uncomfortably heavy, but it should be heavy enough that you can let it swing by its own weight. Select a ball that you can slide your fingers in and out of easily. Make sure you are not stretching your hand in order to hold the ball, your hand span should be comfortable enough to put a pencil between your hand and the ball.</p> <!-- Found me! -->
                 <p>In one game of bowling, there are ten frames. The pins reset at the end of every frame. In the first nine frames you will have two shots to roll your bowling ball down the lane and try to knock down all ten pins. The tenth frame has three shots, but you can only throw the third ball if you knock down all ten pins in the first two frames. The approach at the start of the lane is used the walk up to the foul line and throw your ball. Do not cross the foul line, for you will find oil on the other side and might fall or injure your self. Also, as the name suggests, crossing the foul line is considered a foul. The arrows are in line with the pins and because of this, most people will look at the arrows instead of the pins when lining up their shot. You can also use the lines from the wooden boards to help you position your shot. The ten pins at the end of the lane are numbered. There are four pin rows, the first row has the front pin or pin number one. From there, the numbers go in ascending order starting from the left to right.</p>
             </section>
-            <section id="making-a-table">
-                <table>
-                    <caption>Table 1. Current Courses</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col" rowspan="2">Term</th>
-                            <th scope="col" colspan="3">Course</th>
-                        </tr>
-                        <tr>
-                            <th scope="col">Code</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Hrs/Week</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row" rowspan="6">Winter</th>
-                            <td>CSD113</td>
-                            <td>Computing Environment and Tools</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>TNY130</td>
-                            <td>Techology in Society</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>MTH123</td>
-                            <td>Computer Math</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>CSD122</td>
-                            <td>Hardware/OS/Networks</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>CSD110</td>
-                            <td>Introduction to Programming</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>CMM115</td>
-                            <td>Communications 1</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" rowspan="6">Spring</th>
-                            <td>CSD121</td>
-                            <td>Programming Concepts 1</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>CSD112</td>
-                            <td>Introduction to Website Development</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>CSD123</td>
-                            <td>Databases 1</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>CSA103</td>
-                            <td>System Analysis and Design</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>CSD124</td>
-                            <td>Business Applications 1</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>CSD125</td>
-                            <td>Emerging Technology</td>
-                            <td>3</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th scope="row" colspan="3">Total</th>
-                            <td>42</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </section>
+            <div id="making-a-table"></div>
+            <script src="scripts/timetable.js"></script>
             <section id="my-favourite-things">
                 <h2>My Favourite Things</h2>
                 <figure> <figcaption>Bowling Championship</figcaption>
