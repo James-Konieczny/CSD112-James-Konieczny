@@ -6,6 +6,7 @@
     <meta name="description" content="A personal website featuring a haiku, quote, and more.">
     <title>James' Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--adjust to different screen sizes-->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -17,11 +18,13 @@
 <body>
     <div class="width-wrap">
         <header id="top">
-            <nav><ul>
+            <nav id="main-nav"></nav>
+            <script src="scripts/navigation.js"></script>
+            <!-- <nav><ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="links.html">Links</a></li>
                 <li><a href="glossary.html">Glossary</a></li>
-            </ul></nav>
+            </ul></nav> -->
         </header>
         <main>
             <section id="useful-links">

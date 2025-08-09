@@ -6,6 +6,7 @@
     <meta name="description" content="A personal website featuring a haiku, quote, and more.">
     <title>James' Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--adjust to different screen sizes-->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -17,19 +18,23 @@
 <body>
     <div class="width-wrap">
         <header id="top">
-            <nav><ul>
+            <nav id="main-nav"></nav>
+            <script src="scripts/navigation.js"></script>
+            <!-- <nav><ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="links.html">Links</a></li>
                 <li><a href="glossary.html">Glossary</a></li>
-            </ul></nav>
+            </ul></nav> -->
         </header>
         <main>
-            <div id="creating-a-web-form">
+            <div id="creating-a-web-form"></div>
+            <script src="scripts/survey.js"></script>
+            <!-- <div id="creating-a-web-form">
                 <h1>Survey</h1>
                 <form action="https://formspree.io/f/xvgrrwyd" method="post">
                     <section>
                         <p>
-<label for="name_field">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
+                            <label for="name_field">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
                             <input type="text" id="name" name="name_field" required />
                         </p>
                         <p>
@@ -90,7 +95,7 @@
                         </p>
                     </section>
                 </form>
-            </div>
+            </div> -->
         </main>
         <footer>
             <hr>
